@@ -1,0 +1,17 @@
+target/
+*.class
+
+# Log files
+*.log
+logs/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
