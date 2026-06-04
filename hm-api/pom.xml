@@ -9,12 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cart-service</artifactId>
+    <artifactId>hm-api</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
     <dependencies>
         <!--common-->
         <dependency>
@@ -75,11 +76,6 @@
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-okhttp</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.heima</groupId>
-            <artifactId>hm-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
     </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>
@@ -90,5 +86,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
