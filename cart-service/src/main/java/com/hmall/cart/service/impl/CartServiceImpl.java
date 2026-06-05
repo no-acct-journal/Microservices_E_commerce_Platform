@@ -3,6 +3,7 @@ package com.hmall.cart.service.impl;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hm.api.client.ItemClient;
 import com.hm.api.dto.ItemDTO;
 import com.hmall.cart.domain.dto.CartFormDTO;
 import com.hmall.cart.domain.po.Cart;
@@ -40,7 +41,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 /*    private final RestTemplate restTemplate;
 
     private final DiscoveryClient discoveryClient;*/
-    private final com.hm.api.client.itemClient itemClient;
+    private final ItemClient itemClient;
 
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
