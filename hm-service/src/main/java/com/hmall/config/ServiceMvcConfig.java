@@ -11,7 +11,7 @@ import java.security.KeyPair;
 
 @Configuration
 @EnableConfigurationProperties(JwtProperties.class)
-public class SecurityConfig {
+public class ServiceMvcConfig {
 
     @Bean
     public PasswordEncoder passwordEncoder(){

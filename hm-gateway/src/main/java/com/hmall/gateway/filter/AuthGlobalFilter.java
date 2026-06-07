@@ -58,7 +58,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         // TODO 5.如果有效，传递用户信息
         String userInfo = userId.toString();
         ServerWebExchange ex = exchange.mutate()
-                .request(request.mutate().header("userInfo", userInfo).build())
+                .request(request.mutate().header("user-info", userInfo).build())
                 .build();
 
         System.out.println("userId = " + userId);

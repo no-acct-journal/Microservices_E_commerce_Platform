@@ -1,15 +1,18 @@
 package com.hmall.cart;
 
 import com.hm.api.config.DefaultFeignConfig;
+import com.hmall.common.config.MvcConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import org.springframework.web.client.RestTemplate;
 
 @MapperScan("com.hmall.cart.mapper")
 @SpringBootApplication
+@Import(MvcConfig.class)
 @EnableFeignClients(basePackages = "com.hm.api.client",defaultConfiguration = DefaultFeignConfig.class)
 public class CartApplication {
     public static void main(String[] args) {
